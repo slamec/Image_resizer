@@ -28,4 +28,4 @@ for images in os.listdir(inpath):
     fullOutPath = os.path.join(outpath, 'invert_' + images)
     # fullOutPath contains the path of the output
     # image that needs to be generated
-    img.rotate(90).save(fullOutPath)
+    img.rotate(90).resize((640,480)).save(fullOutPath)
