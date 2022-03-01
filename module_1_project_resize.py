@@ -25,7 +25,7 @@ for images in os.listdir(inpath):
     # inputPath contains the full directory name
     img = Image.open(inputpath)
   
-    fullOutPath = os.path.join(outpath, 'invert_' + images)
+    fullOutPath = os.path.join(outpath, 'invert_' + images + '.png')
     # fullOutPath contains the path of the output
     # image that needs to be generated
-    img.rotate(90).resize((640,480)).save(fullOutPath)
+    img.rotate(90).resize((640,480)).save(fullOutPath) 
